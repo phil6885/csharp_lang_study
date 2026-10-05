@@ -1,4 +1,11 @@
-﻿public class Stock
+﻿Console.WriteLine("Hello Main!");
+var stock = new Stock
+{
+    CurrentPrice = 100
+};
+Console.WriteLine($"current price from main: {stock.CurrentPrice}");
+
+public class Stock
 {
     decimal currentPrice;
 
@@ -14,18 +21,5 @@
             Console.WriteLine($"Set current price: {value}");
             currentPrice = value;
         }
-    }
-}
-
-public static class Program
-{
-    public static void Main()
-    {
-        Console.WriteLine("Hello Main!");
-        var stock = new Stock
-        {
-            CurrentPrice = 100
-        };
-        Console.WriteLine($"current price from main: {stock.CurrentPrice}");
     }
 }
