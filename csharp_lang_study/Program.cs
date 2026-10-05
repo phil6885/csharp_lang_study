@@ -11,11 +11,7 @@ public class Stock
 
     public decimal CurrentPrice
     {
-        get
-        {
-            Console.WriteLine($"get current price: {currentPrice}");
-            return currentPrice;
-        }
+        get => currentPrice;
         set
         {
             Console.WriteLine($"Set current price: {value}");
